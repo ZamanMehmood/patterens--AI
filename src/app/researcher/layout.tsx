@@ -1,16 +1,20 @@
-import React from "react";
+import { ReactNode } from "react";
+import Navbar from "./Navbar";
 
-export default function ResearcherLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata = {
+  title: "Researcher Dashboard",
+  description: "Researcher portal for observation tracking",
+};
+
+export default function ResearcherLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <header className="p-4 bg-blue-600 text-white text-center font-semibold">
-        Researcher Portal
-      </header>
-      <main className="p-6">{children}</main>
+    <div className="min-h-screen bg-gray-100 flex flex-col">
+      <Navbar />
+
+      
+
+      {/* Page Content */}
+      <main className="flex-1">{children}</main>
     </div>
   );
 }
