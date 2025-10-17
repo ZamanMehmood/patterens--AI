@@ -1,16 +1,11 @@
-import React from "react";
+import { ReactNode } from "react";
+import Navbar from "./Navbar";
 
-export default function ContrubutorLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ContributorLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <header className="p-4 bg-blue-600 text-white text-center font-semibold">
-        Contributor Portal
-      </header>
-      <main className="p-6">{children}</main>
+    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col">
+      <Navbar />
+      <main className="flex-grow p-6">{children}</main>
     </div>
   );
 }
