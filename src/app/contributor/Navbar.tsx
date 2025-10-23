@@ -24,10 +24,10 @@ export default function Navbar() {
         <Link href="/contributor/upload" className="hover:text-gray-300">
           Upload
         </Link>
-        <Link href="/contributor/my-gallery" className="hover:text-gray-300">
+        <Link href="/contributor/myGallery" className="hover:text-gray-300">
           My Gallery
         </Link>
-        <Link href="/contributor/my-profile" className="hover:text-gray-300">
+        <Link href="/contributor/myProfile" className="hover:text-gray-300">
           My Profile
         </Link>
       </div>
